@@ -10,6 +10,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 
 1. `2025-12-28-what-i-thought-i-knew-about-ai.md` — "What I Thought I Knew About AI." Surprises from going deep on AI: tokenization (BPE), attention/BERT, compound AI systems. ~480 words, includes source links.
 2. `2026-01-05-what-building-an-ai-product-taught-me.md` — "What Building an AI Product Taught Me About Engineering." Engineering lessons from building an AI product: system design > model, ETL/pipeline analogy, scoping discipline, compound AI in practice. ~390 words.
+3. `2026-01-12-i-didnt-go-back-to-coding.md` — "I Didn't Go Back to Coding." The shift from vibe coding (GPT-4, 2024) to spec-driven development (Claude Opus 4.5, late 2025). Returning to IC feels different now — less like coding, more like architecture. ~430 words.
 
 ## Voice rules
 
