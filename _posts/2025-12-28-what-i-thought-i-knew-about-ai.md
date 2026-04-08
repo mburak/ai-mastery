@@ -6,26 +6,32 @@ categories: [foundations]
 tags: [llm, tokens, compound-ai, karpathy]
 ---
 
-I've been in the software industry for over 27 years. The last 14 or so I spent in management and leadership, and recently I decided to step away from that and get back to building things. Specifically, I want to get good at AI engineering. Not just using the tools but understanding how they work and how to build with them.
+A few weeks ago I was explaining to someone how LLMs work. I said something like "they predict the next word based on all the previous words." Confident. Casual. The kind of thing you say when you've used ChatGPT and Claude every day for a year and you figure you get the gist.
 
-So I started learning. Watching talks, reading papers, going through books. This post is about the first few things that surprised me.
+Turns out I was wrong about almost every part of that sentence.
 
-## Why tokens and not words
+I've been in the software industry for over 27 years. The last 14 or so I spent in management and leadership. Recently I stepped away from that because I wanted to get back to building things, specifically in AI. Not just using the tools but actually understanding how they work. So I started digging in. Reading books, watching talks, going through papers. And pretty quickly I realized that the gap between "I use AI" and "I understand AI" was a lot bigger than I expected.
 
-I've used LLMs plenty, but I never stopped to think about why they work with tokens instead of words. Turns out it's a practical tradeoff. Words are messy. Morphology, compound words, multilingual text. Subword tokenization gives you a fixed vocabulary that can handle any language and any new word by breaking it into known pieces. It's one of those design decisions that seems obvious once you hear it but reveals how much engineering goes into what feels like magic.
+## They don't even use words
 
-## There are two types of language models
+The first thing that got me was tokens. LLMs don't operate on words at all. They use subword tokens, which are pieces of words broken up by an algorithm called byte pair encoding. The reason is practical: words are messy. Different languages, different forms of the same word, compound words. A fixed vocabulary of subword tokens can handle all of that by breaking any word, in any language, into known pieces.
 
-I always assumed "language model" meant what GPT does. Predict the next token, left to right. But there's a whole other family: masked language models like BERT that predict missing tokens anywhere in a sequence. These are critical for things like embeddings and search.
+I'd typed millions of words into these tools without ever thinking about what was actually happening on the other side. That was a humbling start.
 
-The fact that I'd been using AI tools daily without knowing this distinction told me I had more to learn than I thought.
+## There's a whole other kind of language model
 
-## Systems, not models
+I always assumed "language model" meant what GPT does. You feed it some text, it predicts the next token, left to right. That's called an autoregressive model. But there's another family I'd never heard of: masked language models, like BERT. Instead of predicting what comes next, they predict missing tokens anywhere in a sequence.
 
-The other big shift in my thinking came from reading the Berkeley BAIR blog post on Compound AI Systems. The core idea is that the best AI results today don't come from a single model call. They come from systems that combine models with retrieval, tools, code execution, and control logic.
+This matters because masked models are what power embeddings and semantic search. The kind of thing that makes RAG systems work. I'd been using products built on both types of models every day without knowing there were two types.
 
-As an engineer, this framing clicked right away. It's not about having the smartest model. It's about building the right system around it. That's an engineering problem, and it's one I know how to think about.
+## The thing that actually changed how I think
+
+The real shift came from a Berkeley blog post about Compound AI Systems. The argument is simple: the best AI results today don't come from one model doing everything. They come from systems. A model plus retrieval plus tools plus code execution plus control logic, all wired together.
+
+That landed differently for me than the technical stuff. Because building systems is what I've done my entire career. The instinct to decompose a problem, design the right interfaces, handle failure modes, think about what happens at scale. That's not an AI skill. That's an engineering skill.
+
+It reframed the whole thing for me. I went from thinking I needed to become an ML researcher to realizing I needed to become an engineer who understands ML well enough to build real systems with it. Those are very different goals, and the second one felt a lot more like me.
 
 ## What's next
 
-I'm working through the fundamentals now and will be sharing what I learn and build as I go. If you're an engineer getting into AI, I'd like to hear what surprised you too.
+I'm going deep on the fundamentals now. I'll be writing about what I learn, what I get wrong, and eventually what I build. If you're an engineer making a similar move into AI, I'd like to hear what surprised you too.
