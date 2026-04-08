@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What I Learned Designing My First AI Product"
+title: "What Building an AI Product Taught Me About Engineering"
 date: 2026-01-05
 ---
 
