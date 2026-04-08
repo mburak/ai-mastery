@@ -1,4 +1,4 @@
-# AI Mastery Journey
+# AI Mastery
 
 A 24-week hands-on learning path from experienced software engineer to AI-era engineering leader.
 
@@ -21,6 +21,6 @@ Drafts and published posts live in `blog-drafts/`. One post per phase, published
 
 ## About
 
-This repo documents my journey returning to hands-on engineering after 5 years of management, now focused on building deep AI expertise. Every project here was built to learn, not to demo.
+This repo documents my work returning to hands-on engineering, now focused on building deep AI expertise. Every project here was built to learn, not to demo.
 
 Started: April 13, 2026

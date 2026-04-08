@@ -1,5 +1,5 @@
 title: AI Mastery Journal
-description: An experienced engineer's journey into AI engineering.
+description: An experienced engineer going deep on AI.
 author: Matias Burak
 url: "https://mburak.github.io"
 baseurl: "/ai-mastery"
@@ -10,6 +10,8 @@ permalink: /:year/:month/:day/:title/
 
 header_pages:
   - about.md
+
+show_excerpts: true
 
 minima:
   skin: dark
