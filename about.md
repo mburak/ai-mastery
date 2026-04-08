@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm Matias, a software engineer with over 27 years in the industry, about 14 of those in management and leadership roles. In late 2025 I decided to step away from management and go deep on AI and machine learning. Not as a side interest but as a real career shift back to building things.
+I'm Matias, a software engineer with over 27 years in the industry, about 14 of those in management and leadership. I've gone back and forth between leading teams and writing code my whole career.
+
+I've been into AI for a few years now — courses, side projects, building apps with AI coding assistants — but in late 2025 I decided to go all in. Not as a side interest but as a real shift back to building things.
 
 This blog is where I write about what I'm learning, what surprises me, what I build, and what I get wrong along the way. I come at this from an engineering perspective. The AI space moves fast, but the fundamentals still matter.
 
