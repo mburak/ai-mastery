@@ -1,0 +1,15 @@
+title: AI Mastery Journal
+description: An experienced engineer's 24-week journey into AI — from foundations to production systems.
+author: Matias Burak
+url: "https://mburak.github.io"
+baseurl: "/ai-mastery"
+
+theme: minima
+
+permalink: /:year/:month/:day/:title/
+
+header_pages:
+  - about.md
+
+minima:
+  skin: dark
