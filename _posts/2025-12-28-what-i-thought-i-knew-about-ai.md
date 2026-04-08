@@ -26,8 +26,4 @@ I always assumed "language model" meant what GPT does. Feed it text, predict the
 
 The real shift came from a Berkeley blog post about [Compound AI Systems](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/). The argument is simple: the best AI results today don't come from one model doing everything. They come from systems. A model plus retrieval plus tools plus code execution plus control logic, all wired together.
 
-That landed differently for me than the technical stuff. Building systems is what I've done my entire career. Decomposing problems, designing interfaces, handling failure modes, thinking about scale. That's not an AI skill. That's an engineering skill. I went from thinking I needed to become an ML researcher to realizing I needed to become an engineer who understands ML well enough to build real systems with it. Those are very different goals, and the second one felt a lot more like me.
-
-## What's next
-
-I'm going deep on the fundamentals now. I'll write about what I learn, what I get wrong, and eventually what I build. If you're an engineer making a similar move into AI, I'd like to hear what surprised you too.
+That landed differently for me than the technical stuff. Building systems is what I've done my entire career. Decomposing problems, designing interfaces, handling failure modes, thinking about scale. **That's not an AI skill. That's an engineering skill.** I went from thinking I needed to become an ML researcher to realizing I needed to become an engineer who understands ML well enough to build real systems with it. Those are very different goals, and the second one felt a lot more like me.
