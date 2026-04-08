@@ -22,7 +22,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 - Read it out loud. If it sounds like a LinkedIn post or a press release, rewrite it.
 - Use **bold** for a key insight worth highlighting — once or twice per post at most.
 - Use *italic* for emphasis within a sentence, sparingly.
-- Use links for technical terms or concepts with good reference material. Don't over-link.
+- Use links for technical terms or concepts with good reference material. Don't over-link. Always add `{:target="_blank"}` so links open in a new tab.
 
 ## About Matias (for voice and accuracy)
 
