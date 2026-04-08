@@ -12,6 +12,7 @@ header_pages:
   - about.md
 
 show_excerpts: true
+excerpt_separator: "<!--more-->"
 
 minima:
   skin: dark

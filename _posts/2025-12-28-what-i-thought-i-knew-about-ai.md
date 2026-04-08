@@ -10,6 +10,8 @@ A few weeks ago I was explaining to someone how LLMs work. I said something like
 
 Turns out I was wrong about almost every part of that sentence.
 
+<!--more-->
+
 I've been in the software industry for over 27 years. I've gone back and forth between building things and leading teams. I've been into AI for a while — courses, side projects, building apps with AI coding assistants — but recently I decided to go deep. Not just using the tools but understanding how they work. Pretty quickly I realized the gap between "I use AI" and "I understand AI" was a lot bigger than I expected.
 
 ## They don't even use words
