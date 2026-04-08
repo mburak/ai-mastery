@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I'm Matias — a software engineer with 20+ years of experience, including the last five in engineering management. In April 2026, I decided to go deep on AI and machine learning, not as a side interest but as a deliberate career move.
+I'm Matias, a software engineer with over 27 years in the industry, about 14 of those in management and leadership roles. In late 2025 I decided to step away from management and go deep on AI and machine learning. Not as a side interest but as a real career shift back to building things.
 
-This blog documents that journey: what I'm learning, what surprises me, what I get wrong, and what I build along the way. I'm following a structured 24-week plan that covers everything from neural network fundamentals to production AI systems and agentic architectures.
+This blog is where I write about what I'm learning, what surprises me, what I build, and what I get wrong along the way. I come at this from an engineering perspective. The AI space moves fast, but the fundamentals still matter.
 
-If you're an experienced engineer making a similar transition, I hope these posts are useful. The AI space moves fast, but the engineering fundamentals still matter — and that's the lens I'm writing from.
+If you're an experienced engineer making a similar move, I hope you find some of this useful.
 
 You can find my code and projects at [github.com/mburak/ai-mastery](https://github.com/mburak/ai-mastery).
