@@ -2,7 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Override minima variables before import
+// Dark skin colors
+$text-color:        #c9d1d9;
+$background-color:  #1c1c1c;
+$brand-color:       #58a6ff;
+$grey-color:        #6e7681;
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 25%);
+
+// Layout and typography
 $base-font-size:    18px;
 $base-line-height:  1.75;
 $content-width:     860px;
