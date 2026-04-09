@@ -8,6 +8,8 @@ In late December I wrote about what surprised me when I started going deep on AI
 
 <!--more-->
 
+![](/assets/images/post-2-hero.png)
+
 The first thing I realized is that the AI part is not the hard part. Or at least, it's not the part that takes the most thinking. The hard part is everything around the AI — how data gets in, how you validate what comes out, how you handle the cases where the model gets it wrong.
 
 I spent years designing systems. Queues, APIs, data models, failure modes. I assumed AI products would be a fundamentally different kind of work. They're not. **They're system design problems with a probabilistic component in the middle.**
