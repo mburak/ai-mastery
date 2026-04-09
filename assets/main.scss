@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Layout and typography variables (must be before import)
+// Typography variables (before import)
 $base-font-size:    18px;
 $base-line-height:  1.75;
 $content-width:     860px;
@@ -10,63 +10,118 @@ $spacing-unit:      30px;
 
 @import "minima";
 
-// ─── Dark theme ────────────────────────────────────────────────────────────
+// ─── Theme: CSS custom properties ──────────────────────────────────────────
+
+:root {
+  --bg:           #fdfdfd;
+  --text:         #333333;
+  --text-muted:   #828282;
+  --link:         #2a7ae2;
+  --link-hover:   #1756a9;
+  --border:       rgba(0, 0, 0, 0.08);
+  --site-title:   #424242;
+  --nav-link:     #424242;
+  --accent:       #2a7ae2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:           #1c1c1c;
+    --text:         #c9d1d9;
+    --text-muted:   #6e7681;
+    --link:         #58a6ff;
+    --link-hover:   #79b8ff;
+    --border:       rgba(255, 255, 255, 0.06);
+    --site-title:   #c9d1d9;
+    --nav-link:     #c9d1d9;
+    --accent:       #2a7ae2;
+  }
+}
+
+[data-theme="dark"] {
+  --bg:           #1c1c1c;
+  --text:         #c9d1d9;
+  --text-muted:   #6e7681;
+  --link:         #58a6ff;
+  --link-hover:   #79b8ff;
+  --border:       rgba(255, 255, 255, 0.06);
+  --site-title:   #c9d1d9;
+  --nav-link:     #c9d1d9;
+  --accent:       #2a7ae2;
+}
+
+[data-theme="light"] {
+  --bg:           #fdfdfd;
+  --text:         #333333;
+  --text-muted:   #828282;
+  --link:         #2a7ae2;
+  --link-hover:   #1756a9;
+  --border:       rgba(0, 0, 0, 0.08);
+  --site-title:   #424242;
+  --nav-link:     #424242;
+  --accent:       #2a7ae2;
+}
+
+// ─── Base ──────────────────────────────────────────────────────────────────
 
 body {
-  background-color: #1c1c1c;
-  color: #c9d1d9;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-.site-header {
-  background-color: #1c1c1c;
-  border-bottom-color: #333;
-}
-
-.site-footer {
-  background-color: #1c1c1c;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  color: #6e7681;
-}
-
-.site-title,
-.site-title:visited {
-  color: #c9d1d9;
-}
-
-.site-nav .page-link {
-  color: #c9d1d9;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 a {
-  color: #58a6ff;
-  &:hover { color: #79b8ff; }
-}
-
-.post-link {
-  color: #58a6ff;
-  &:visited { color: #58a6ff; }
+  color: var(--link);
+  &:hover { color: var(--link-hover); }
+  &:visited { color: var(--link); }
 }
 
 // ─── Site header ───────────────────────────────────────────────────────────
 
 .site-header {
-  border-top: 3px solid #2a7ae2;
+  background-color: var(--bg);
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
   padding: 16px 0;
 }
 
-.site-title {
+.site-title,
+.site-title:visited {
+  color: var(--site-title);
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.site-nav .page-link {
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+.site-nav {
+  .page-link {
+    color: var(--nav-link);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .nav-trigger ~ label .menu-icon > svg path {
+    fill: var(--nav-link);
+  }
+}
+
+// ─── Theme toggle button ────────────────────────────────────────────────────
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0 0 12px;
+  color: var(--nav-link);
+  opacity: 0.7;
+  vertical-align: middle;
+
+  &:hover { opacity: 1; }
 }
 
 // ─── Home intro ────────────────────────────────────────────────────────────
@@ -75,10 +130,11 @@ a {
   font-size: 1.1rem;
   line-height: 1.8;
   font-style: italic;
-  opacity: 0.8;
+  color: var(--text);
+  opacity: 0.85;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid var(--border);
 }
 
 // ─── Post list ─────────────────────────────────────────────────────────────
@@ -89,7 +145,7 @@ a {
 
   > li {
     padding: 1.75rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border);
 
     &:first-child { padding-top: 0.25rem; }
     &:last-child  { border-bottom: none; }
@@ -100,8 +156,7 @@ a {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.45;
-  color: #c9d1d9;
+  color: var(--text-muted);
 }
 
 .post-list h3 {
@@ -112,8 +167,16 @@ a {
   font-weight: 700;
 }
 
+.post-link {
+  color: var(--link);
+  font-weight: 700;
+  &:visited { color: var(--link); }
+  &:hover   { color: var(--link-hover); }
+}
+
 .post-list p {
   margin-bottom: 0;
+  color: var(--text);
   opacity: 0.85;
   line-height: 1.7;
 }
@@ -124,10 +187,12 @@ a {
   font-size: 0.88rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  opacity: 0.7;
+  color: var(--link);
+  opacity: 0.8;
 
   &:hover {
     opacity: 1;
+    color: var(--link-hover);
     text-decoration: none;
   }
 }
@@ -137,7 +202,7 @@ a {
 .post-header {
   margin-bottom: 1.75rem;
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid var(--border);
 }
 
 .post-title {
@@ -145,10 +210,12 @@ a {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #e6edf3;
+  color: var(--text);
 }
 
 .post-content {
+  color: var(--text);
+
   p { margin-bottom: 1.4rem; }
 
   h2 {
@@ -157,18 +224,25 @@ a {
     margin-top: 2.25rem;
     margin-bottom: 0.75rem;
     letter-spacing: 0.01em;
-    color: #e6edf3;
+    color: var(--text);
   }
 
   a {
+    color: var(--link);
     text-decoration: underline;
     text-underline-offset: 2px;
+    &:hover { color: var(--link-hover); }
   }
+
+  strong { color: var(--text); }
 }
 
 // ─── Site footer ───────────────────────────────────────────────────────────
 
 .site-footer {
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
   padding: 1.5rem 0;
   font-size: 0.85rem;
+  color: var(--text-muted);
 }
