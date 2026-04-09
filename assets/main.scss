@@ -2,15 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Dark skin colors
-$text-color:        #c9d1d9;
-$background-color:  #1c1c1c;
-$brand-color:       #58a6ff;
-$grey-color:        #6e7681;
-$grey-color-light:  lighten($grey-color, 40%);
-$grey-color-dark:   darken($grey-color, 25%);
-
-// Layout and typography
+// Layout and typography variables (must be before import)
 $base-font-size:    18px;
 $base-line-height:  1.75;
 $content-width:     860px;
@@ -18,11 +10,43 @@ $spacing-unit:      30px;
 
 @import "minima";
 
-// ─── Base typography ───────────────────────────────────────────────────────
+// ─── Dark theme ────────────────────────────────────────────────────────────
 
 body {
+  background-color: #1c1c1c;
+  color: #c9d1d9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  background-color: #1c1c1c;
+  border-bottom-color: #333;
+}
+
+.site-footer {
+  background-color: #1c1c1c;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #6e7681;
+}
+
+.site-title,
+.site-title:visited {
+  color: #c9d1d9;
+}
+
+.site-nav .page-link {
+  color: #c9d1d9;
+}
+
+a {
+  color: #58a6ff;
+  &:hover { color: #79b8ff; }
+}
+
+.post-link {
+  color: #58a6ff;
+  &:visited { color: #58a6ff; }
 }
 
 // ─── Site header ───────────────────────────────────────────────────────────
@@ -67,13 +91,8 @@ body {
     padding: 1.75rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
-    &:first-child {
-      padding-top: 0.25rem;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
+    &:first-child { padding-top: 0.25rem; }
+    &:last-child  { border-bottom: none; }
   }
 }
 
@@ -82,6 +101,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.45;
+  color: #c9d1d9;
 }
 
 .post-list h3 {
@@ -89,10 +109,6 @@ body {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
   line-height: 1.25;
-  font-weight: 700;
-}
-
-.post-link {
   font-weight: 700;
 }
 
@@ -129,12 +145,11 @@ body {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #e6edf3;
 }
 
 .post-content {
-  p {
-    margin-bottom: 1.4rem;
-  }
+  p { margin-bottom: 1.4rem; }
 
   h2 {
     font-size: 1.2rem;
@@ -142,6 +157,7 @@ body {
     margin-top: 2.25rem;
     margin-bottom: 0.75rem;
     letter-spacing: 0.01em;
+    color: #e6edf3;
   }
 
   a {
@@ -153,8 +169,6 @@ body {
 // ─── Site footer ───────────────────────────────────────────────────────────
 
 .site-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 1.5rem 0;
   font-size: 0.85rem;
-  opacity: 0.6;
 }
