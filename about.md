@@ -10,4 +10,4 @@ I've been into AI for a few years now — courses, side projects, building apps 
 
 This blog is where I write about what I'm learning, what I get wrong, and what actually changes when you apply 27 years of engineering instinct to a field that moves this fast.
 
-You can find my code and projects at [github.com/mburak/ai-mastery](https://github.com/mburak/ai-mastery){:target="_blank"}.
+Some of my public work is on [GitHub](https://github.com/mburak){:target="_blank"}.
