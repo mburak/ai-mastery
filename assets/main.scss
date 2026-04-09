@@ -2,21 +2,155 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// Override minima variables before import
+$base-font-size:    18px;
+$base-line-height:  1.75;
+$content-width:     860px;
+$spacing-unit:      36px;
+
 @import "minima";
+
+// ─── Base typography ───────────────────────────────────────────────────────
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ─── Site header ───────────────────────────────────────────────────────────
+
+.site-header {
+  border-top: 3px solid #2a7ae2;
+  padding: 16px 0;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.site-nav .page-link {
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+// ─── Home intro ────────────────────────────────────────────────────────────
 
 .home-intro {
   font-size: 1.15rem;
-  line-height: 1.8;
+  line-height: 1.85;
   font-style: italic;
+  opacity: 0.8;
+  padding: 2rem 0 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+// ─── Post list ─────────────────────────────────────────────────────────────
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    &:first-child {
+      padding-top: 0.5rem;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.post-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+.post-list h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.post-link {
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post-list p {
+  margin-bottom: 0;
   opacity: 0.85;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.7;
 }
 
 .read-more {
   display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-size: 0.88rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+// ─── Post content ──────────────────────────────────────────────────────────
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.post-content {
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+// ─── Site footer ───────────────────────────────────────────────────────────
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 2rem 0;
+  font-size: 0.85rem;
+  opacity: 0.6;
 }

@@ -8,11 +8,11 @@ tags: [ai-assisted-coding, vibe-coding, specs, productivity]
 
 In April 2024 I built an iOS and Android app using GPT-4. It was mostly a disaster.
 
+<!--more-->
+
 The pattern was always the same. The AI would generate code. Something would break. I'd paste the error log and explain what was wrong. The AI would say "I understand" and generate slightly different broken code. Repeat. I was spending more time fighting the tool than building the product.
 
 I blamed the AI. Partly I was right — the models were weaker then. But I was also doing it wrong. I was vibe coding before I knew that's what it was called. No specs, no structure, just "make this thing work" back and forth until one of us gave up.
-
-<!--more-->
 
 Through 2025 the models improved steadily. Claude 3.5 Sonnet and GPT-4o were noticeably better — fewer loops, more coherent outputs. Things got easier, but the real click came in late 2025 with [Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5){:target="_blank"}. That's when I stopped fighting and started steering.
 
