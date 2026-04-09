@@ -1,3 +1,13 @@
+.home-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-style: italic;
+  opacity: 0.85;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .read-more {
   display: inline-block;
   margin-top: 0.5rem;
