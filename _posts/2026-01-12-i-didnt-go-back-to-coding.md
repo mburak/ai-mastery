@@ -4,13 +4,12 @@ title: "I Didn't Go Back to Coding"
 date: 2026-01-12
 categories: [foundations]
 tags: [ai-assisted-coding, vibe-coding, specs, productivity]
+image: /assets/images/post-3-hero.png
 ---
 
 In April 2024 I built an iOS and Android app using GPT-4. It was mostly a disaster.
 
 <!--more-->
-
-![](/assets/images/post-3-hero.png)
 
 The pattern was always the same. The AI would generate code. Something would break. I'd paste the error log and explain what was wrong. The AI would say "I understand" and generate slightly different broken code. Repeat. I was spending more time fighting the tool than building the product.
 

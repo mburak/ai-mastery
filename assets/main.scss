@@ -197,6 +197,19 @@ a {
   }
 }
 
+// ─── Post hero image ───────────────────────────────────────
+
+.post-hero {
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+}
+
 // ─── Post content ──────────────────────────────────────────────────────────
 
 .post-header {

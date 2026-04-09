@@ -4,6 +4,7 @@ title: "Why I'm Going Deep"
 date: 2026-01-19
 categories: [foundations]
 tags: [ai-architecture, learning, retrieval, compound-ai]
+image: /assets/images/post-4-hero.png
 ---
 
 Things are working. I'm shipping.
@@ -11,8 +12,6 @@ Things are working. I'm shipping.
 So why go deep now?
 
 <!--more-->
-
-![](/assets/images/post-4-hero.png)
 
 The honest answer is uncomfortable: staying shallow is easier, and I've been doing it. Making architecture decisions, choosing models, designing retrieval systems — all of it, more or less on vibes. I kept what worked, replaced what broke, and couldn't always tell you why.
 

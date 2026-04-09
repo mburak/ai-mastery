@@ -2,13 +2,12 @@
 layout: post
 title: "What Building an AI Product Taught Me About Engineering"
 date: 2026-01-05
+image: /assets/images/post-2-hero.png
 ---
 
 In late December I wrote about what surprised me when I started going deep on AI. By January I was building something real. That's when the actual lessons started.
 
 <!--more-->
-
-![](/assets/images/post-2-hero.png)
 
 The first thing I realized is that the AI part is not the hard part. Or at least, it's not the part that takes the most thinking. The hard part is everything around the AI — how data gets in, how you validate what comes out, how you handle the cases where the model gets it wrong.
 
