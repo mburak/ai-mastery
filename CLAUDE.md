@@ -12,6 +12,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 2. `2026-01-05-what-building-an-ai-product-taught-me.md` — "What Building an AI Product Taught Me About Engineering." Engineering lessons from building an AI product: system design > model, ETL/pipeline analogy, scoping discipline, compound AI in practice. ~390 words.
 3. `2026-01-12-i-didnt-go-back-to-coding.md` — "I Didn't Go Back to Coding." The shift from vibe coding (GPT-4, 2024) to spec-driven development (Claude Opus 4.5, late 2025). Returning to IC feels different now — less like coding, more like architecture. ~430 words.
 4. `2026-01-19-why-im-going-deep.md` — "Why I'm Going Deep." Why go deep on AI when things are already working. Driven by hitting limits (chunking/retrieval, debugging blind) and co-founding a company where AI is the core technology. The gap is about the whole picture, not just internals. ~300 words.
+5. `2026-01-26-what-management-actually-prepared-me-for.md` — "What Management Actually Prepared Me For." Management habits (specs, scoping, handling unreliable systems) transferred directly to AI product development. Stayed technical through side projects but pace/focus different. ~370 words.
 
 ## Voice rules
 
