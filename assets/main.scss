@@ -158,6 +158,10 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
+
+  .post-meta-separator {
+    margin: 0 0.4em;
+  }
 }
 
 .post-list h3 {
