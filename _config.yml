@@ -6,6 +6,9 @@ baseurl: "/ai-mastery"
 
 theme: minima
 
+plugins:
+  - jekyll-sitemap
+
 permalink: /:year/:month/:day/:title/
 
 header_pages:
