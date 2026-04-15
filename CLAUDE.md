@@ -14,6 +14,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 4. `2026-01-19-why-im-going-deep.md` — "Why I'm Going Deep." Why go deep on AI when things are already working. Driven by hitting limits (chunking/retrieval, debugging blind) and co-founding a company where AI is the core technology. The gap is about the whole picture, not just internals. ~300 words.
 5. `2026-01-26-what-management-actually-prepared-me-for.md` — "What Management Actually Prepared Me For." Management habits (specs, scoping, handling unreliable systems) transferred directly to AI product development. Stayed technical through side projects but pace/focus different. ~370 words.
 6. `2026-02-02-its-not-about-trust.md` — "It's Not About Trust." Trust is the wrong frame for AI coding assistants — knowing failure modes is better. Multi-model verification workflow, tests + model review as complementary layers, better models introduce new risks. ~390 words.
+7. `2026-02-09-the-pipeline-i-built-and-never-finished.md` — "The Pipeline I Built and Never Finished." RAG pipeline post-mortem: Obsidian notes, text-embedding-3-large, pgvector/Supabase, delta processing. Chunking was AI-suggested, retrieval layer never built. Key insight: start with retrieval, not ingestion. ~280 words.
 
 ## Voice rules
 
