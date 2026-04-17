@@ -16,6 +16,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 6. `2026-02-02-its-not-about-trust.md` — "It's Not About Trust." Trust is the wrong frame for AI coding assistants — knowing failure modes is better. Multi-model verification workflow, tests + model review as complementary layers, better models introduce new risks. ~390 words.
 7. `2026-02-09-the-pipeline-i-built-and-never-finished.md` — "The Pipeline I Built and Never Finished." RAG pipeline post-mortem: Obsidian notes, text-embedding-3-large, pgvector/Supabase, delta processing. Chunking was AI-suggested, retrieval layer never built. Key insight: start with retrieval, not ingestion. ~280 words.
 8. `2026-02-16-what-actually-slows-you-down.md` — "What Actually Slows You Down." The real friction when building with AI: the gap between building speed and understanding. Understanding gap, context loss, spec drift — three versions of the same problem. ~320 words.
+9. `2026-02-23-two-months-in.md` — "Two Months In." Two month retrospective on going deep on AI. Faster, knows what he doesn't know, reads differently, more confident in technical conversations. Black box gap remains. Closer: "I know enough to know how much I don't know yet." ~340 words.
 
 ## Voice rules
 
