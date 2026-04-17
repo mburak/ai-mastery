@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/ai-mastery/assets/images/avatar.png" alt="Matias Burak" style="width:160px;border-radius:50%;display:block;margin:0 auto 1.5rem;">
+<img src="/ai-mastery/assets/images/avatar.png" alt="Matias Burak" style="width:160px;float:left;margin:0 1.5rem 1rem 0;border-radius:6px;">
 
 I'm Matias, a software engineer with over 27 years in the industry, about 14 of those in management and leadership. I've gone back and forth between leading teams and writing code my whole career.
 
