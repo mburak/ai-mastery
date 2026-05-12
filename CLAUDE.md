@@ -18,6 +18,7 @@ GitHub Pages blog at mburak.github.io/ai-mastery. Jekyll with minima theme (dark
 8. `2026-02-16-what-actually-slows-you-down.md` — "What Actually Slows You Down." The real friction when building with AI: the gap between building speed and understanding. Understanding gap, context loss, spec drift — three versions of the same problem. ~320 words.
 9. `2026-02-23-two-months-in.md` — "Two Months In." Two month retrospective on going deep on AI. Faster, knows what he doesn't know, reads differently, more confident in technical conversations. Black box gap remains. Closer: "I know enough to know how much I don't know yet." ~340 words.
 10. `2026-03-02-the-sdlc-didnt-go-away.md` — "The SDLC Didn't Go Away." 27-year SDLC perspective: agile compressed waterfall's upfront design, CI/CD compressed deployments, now AI is compressing implementation. Unlike previous shifts, the work didn't move to new disciplines — it moved back to phases we thought we'd minimized (specs, design, review). ~395 words.
+11. `2026-03-09-same-prompt-different-code.md` — "Same Prompt, Different Code." The shift from deterministic to non-deterministic engineering. Distinguishes plumbing non-determinism (race conditions, eventually-consistent DBs) from semantic non-determinism (model output varies in what it's trying to do). Changes how you debug, test, and where confidence comes from. ~415 words.
 
 ## Voice rules
 
