@@ -9,6 +9,8 @@ image: /assets/images/post-10-hero.png
 
 I've seen the SDLC compress three times in my career. Agile compressed the months of upfront design that waterfall required. CI/CD compressed deployments from weeks to seconds. Each time, a phase that dominated the calendar shrank to almost nothing. The focus moved to something new — testing automation, observability, infrastructure as code.
 
+<!--more-->
+
 This time is different. The phase getting compressed is implementation itself. The thing engineers built their careers on.
 
 Last week I wrote a spec for a retrieval change. The spec took two hours. The implementation took fifteen minutes. The review took close to an hour. That ratio would have been inverted at every previous point in my career.
