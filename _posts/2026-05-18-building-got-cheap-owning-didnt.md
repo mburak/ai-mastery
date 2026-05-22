@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Got Cheap. Owning Didn't."
-date: 2026-05-25
+date: 2026-05-18
 categories: [foundations]
 tags: [engineering, scope, yagni]
 image: /assets/images/post-21-hero.png
